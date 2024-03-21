@@ -1,0 +1,180 @@
+/* Definição das variáveis de cor e sombra */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --bg-color: rgba(0, 0, 0, 0.9);
+  --shadow-color: rgba(0, 0, 0, 0.4);
+  --hover-shadow-color: rgba(0, 0, 0, 0.6);
+  --text-color: rgba(255, 255, 255, 0.9);
+  --divider-color: rgba(255, 255, 255, 0.3);
+  --profile-border-color: rgba(255, 255, 255, 0.9);
+  --linkedin-hover-color: #0077b5;
+  --twitter-hover-color: #1da1f2;
+  --github-hover-color: #333;
+  --transition-duration: 0.3s;
+}
+
+/* Estilização básica do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Container principal para o cartão */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilização do cartão */
+.card {
+  width: 350px;
+  background: var(--bg-color);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px var(--shadow-color);
+  overflow: hidden;
+  transition: box-shadow var(--transition-duration) ease;
+}
+
+/* Efeito de sombra no hover do cartão */
+.card:hover {
+  box-shadow: 0 12px 24px var(--hover-shadow-color);
+}
+
+/* Estilização da parte superior do cartão */
+.card__top {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilização da imagem de perfil */
+.card__top img.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Estilização da foto do perfil */
+.profile__photo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 15px;
+}
+
+/* Estilização da imagem da foto do perfil */
+.profile__photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--profile-border-color);
+  transition: transform var(--transition-duration) ease;
+}
+
+/* Efeito de escala no hover da foto do perfil */
+.profile__photo:hover img {
+  transform: scale(1.1);
+}
+
+/* Estilização do conteúdo do cartão */
+.card__content {
+  text-align: center;
+  color: var(--text-color);
+  padding: 1.5em;
+  margin: 1em 0;
+}
+
+/* Estilização do parágrafo de informações no conteúdo do cartão */
+.card__content p.card__info {
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0.5em 0;
+}
+
+/* Estilização das informações de contato */
+.contact-info {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Estilização do parágrafo nas informações de contato */
+.contact-info p {
+  margin-bottom: 0.5em;
+}
+
+/* Estilização da linha divisória */
+.divider {
+  border: 1px solid var(--divider-color);
+  margin: 15px 0;
+}
+
+/* Estilização dos ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Estilização básica dos ícones sociais */
+.social-icons a {
+  font-size: 18px;
+  margin: 10px 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color var(--transition-duration) ease;
+}
+
+/* Simplificação do hover para os ícones sociais */
+.social-icons a:hover {
+  color: var(--hover-color);
+}
+
+/* Estilização dos ícones sociais específicos no hover */
+.social-icons a[aria-label="LinkedIn"]:hover {
+  color: var(--linkedin-hover-color);
+}
+
+.social-icons a[aria-label="Twitter"]:hover {
+  color: var(--twitter-hover-color);
+}
+
+.social-icons a[aria-label="GitHub"]:hover {
+  color: var(--github-hover-color);
+}
+
+/* Estilização responsiva para telas pequenas */
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  .profile__photo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card__content {
+    text-align: center;
+    color: var(--text-color);
+    padding: 1.5em;
+    margin: 1em 0;
+    white-space: nowrap;
+    font-size: 0.8em;
+  }
+
+  .card__content p.card__info {
+    font-weight: 300;
+    margin: 0.5em 0;
+  }
+}

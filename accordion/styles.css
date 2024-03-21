@@ -1,0 +1,124 @@
+/* Estilos padrão para todos os elementos*/ 
+* {
+    margin: 0;/*Remove a margem padrão dos elementos.*/
+    padding: 0; /*Remove o padding padrão dos elementos.*/
+    box-sizing: border-box; /*Define o modelo de caixa para "border-box"*/
+  }
+  
+  /* Estilos para o corpo do documento*/ 
+  body {
+    min-height: 100vh; /*Define a altura mínima como 100% da altura (área visível do navegador)*/
+    display: flex; /*Torna o elemento body um container flexbox */
+    flex-direction: column; /*Define a direção do layout flexbox como coluna.*/
+    align-items: center; /*Alinha os elementos filhos na direção transversal do flexbox (eixo Y).*/
+    justify-content: center; /*Alinha os elementos filhos na direção principal do flexbox (eixo X).*/
+    background: #dd500e; /*Define a cor de fundo do body como um laranja escuro*/
+    text-align: center; /*Centraliza todo o texto dentro do body.*/
+    font-family: "Euclid Circular A", "Poppins"; /*Define as fontes.*/
+  }
+  
+  /* div accordion */
+  .accordion {
+    width: 100%; /* Define a largura do elemento como 100% da largura do seu container pai */
+    display: flex; /* Torna o elemento um container flexbox */
+    justify-content: center; /*  Alinha os itens filhos do container horizontalmente no centro.*/
+    height: 400px; /* Define a altura do elemento como 400px. */
+    gap: 16px; /* Adiciona um espaçamento de 16px entre os itens filhos do container*/
+    transition: 0.3s; /* Habilita uma animação de transição suave de 0.3 segundos  */
+  }
+  
+  /* hover da div accordion*/
+  .accordion:hover {
+    gap: 0; /* Faz com que os itens fiquem agrupados, criando um efeito visual mais compacto*/
+  }
+  
+  /* Itens da lista*/
+  .accordion li {
+    position: relative; /*Posiciona cada li de forma relativa ao seu container pai.*/
+    overflow: hidden; /*Esconde qualquer conteúdo que ultrapasse os limites do li */
+    flex: 0 0 80px; /* O item não irá crescer ou encolher para preencher espaço disponível. Largura e altura mínima dos itens de lista como 80px */
+    border-radius: 50px; /*Aplica um arredondamento de 50% às bordas dos li */
+    opacity: 0.75; /* Define uma transparência inicial de 75% para os li.*/
+    cursor: pointer; /*Altera o cursor do mouse para o formato "mãozinha"*/
+  }
+  
+  /* Imagens da lista */
+  .accordion li img {
+    position: absolute; /* Posiciona cada imagem de forma absoluta em relação ao seu container pai */
+    top: 50%; /* Define a margem superior da imagem como 50% da altura do item de lista. */
+    left: 50%; /* Define a margem esquerda da imagem como 50% da largura do item de lista */
+    translate: -50% -50%; /*Aplica uma transformação de translação para mover a imagem para cima e para a esquerda em 50% de suas próprias dimensões */
+    width: 100%; /* Define a largura e altura da imagem como 100% do tamanho do item de lista*/
+    height: 100%;/* Define a largura e altura da imagem como 100% do tamanho do item de lista*/
+    object-fit: cover; /*Garante que a imagem cubra toda a área disponível*/
+    filter: grayscale(0.5) /* Aplica um filtro de escala de cinza inicial de 50% à imagem*/;
+  }
+  
+  /* Transição para os itens da lista */
+  .accordion li,
+  .accordion li img,
+  .accordion li .content,
+  .accordion li .content span {
+    transition: 0.3s; /*Define uma animação de transição suave de 0.3 segundos*/
+  }
+  
+  /* Estilo para o cabeçalho*/
+  .accordion h2 {
+    font-weight: 400; /*Define o peso da fonte como normal (400)*/
+    font-size: 24px; /* Define o tamanho da fonte como 24px*/
+    line-height: 45px; /* Define a altura da linha do texto como 45px.*/
+    border-bottom: 2px solid #fff; /* Adiciona uma borda inferior sólida branca (2px)*/
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px ao título*/
+    white-space: nowrap; /* Evita que o texto do título quebre para a próxima linha.*/
+  }
+  
+  /* Conteúdo dos itens da lista*/
+  .accordion li .content {
+    position: absolute; /*Posiciona o elemento de forma absoluta preenchendo todo o espaço do seu container pai. */
+    inset: 0;
+    z-index: 1; /* Traz para frente ao expandir */
+    color: #fff; /* Cor do texto: branco */
+    padding: 15px; /* Espaçamento interno */
+    background: #ebebf1;
+    background: linear-gradient( 
+      0deg,
+      rgb(0 0 0 / 70%) 10%,
+      rgb(255 255 255 / 0%) 100%
+    ); /* Degradê linear */
+    opacity: 0; /* Oculta inicialmente */
+    visibility: hidden; /* Oculta inicialmente */
+  }
+  
+  /* Estilos do span */
+  .accordion li .content span {
+    position: absolute;  /*Posiciona o elemento de forma absoluta preenchendo todo o espaço do seu container pai. */
+    z-index: 3; /*  Define o índice de empilhamento do elemento*/
+    left: 50%; /* Posiciona o elemento horizontalmente no centro (50% da largura)*/
+    bottom: 50px; /*Posiciona o elemento a 50 px da borda inferior*/
+    translate: -300px 0; /* Move o elemento 300px para a direita, escondendo-o inicialmente.*/
+    visibility: hidden; /* Oculta inicialmente */
+    opacity: 0; /* Oculta inicialmente */
+  }
+  
+  /* hover dos li */
+  .accordion li:hover {
+    flex: 0 1 260px; /* Altera o comportamento do flexbox para o item de lista no hover.*/
+    scale: 1.1; /*Aplica uma transformação de escala de 1.1, */ 
+    z-index: 10; /* Aumenta o índice de empilhamento para 10*/
+    opacity: 1; /* Torna o item de lista completamente visível no hover */
+  }
+  
+   /* hover do conteúdo dos li */
+  .accordion li:hover .content {
+    opacity: 1; /*Define a opacidade como 1, tornando o conteúdo totalmente visível.*/
+    visibility: visible; /* Exibe o conteúdo*/
+  }
+  
+  /* hover do texto dos li */
+  .accordion li:hover span {
+    translate: -50% 0; /*Aplica uma transformação de translação para mover o elemento horizontalmente 50% para a esquerda (centralizando-o)*/
+    opacity: 1; /* Torna o texto totalmente visível.*/
+    visibility: visible; /* Exibe o texto */
+  }
+
+  

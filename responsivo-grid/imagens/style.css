@@ -1,0 +1,42 @@
+.container {
+	max-width: 1000px; /*largura máxima como 1000 pixels. */
+	margin: 0 auto; /* centraliza horizontalmente na página; margens iguais (esquerda e direita).*/
+	padding: 20px; /* preenchimento de 20 pixels em todos os quatro lados.*/
+}
+
+.image-container {
+	display: grid; /*define que o elemento será exibido como uma grade */
+	grid-template-columns: repeat(3, 1fr); /*define o número de colunas na grade e como elas serão dimensionadas. Nesse caso, a grade terá 3 colunas e cada uma delas ocupará a mesma quantidade de espaço. */
+	grid-gap: 20px; /* define a distância entre as células da grade */
+}
+
+.image-container img {
+	width: 100%; /* largura da imagem será definida como 100% da largura do contêiner, ou seja, 
+	a imagem ocupará todo o espaço horizontal disponível dentro do contêiner.*/
+	height: auto /* altura da imagem será ajustada automaticamente */;
+	transition: transform 0.3s, box-shadow 0.3s; /* mudar a escala e a sombra gradualmente durante 0.3 segundos. */
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Aumentar em 10% o tamanho original */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Adicionar sombra à imagem */ 
+}
+
+/* Media query para telas menores que 768px */
+@media (min-width: 480px) and (max-width: 767px) {
+	.container {
+		padding: 10px; /* torna o conteúdo um pouco mais compacto nessa largura*/
+	}
+
+	.image-container {
+		grid-template-columns: repeat(2, 1fr); /*a grade terá duas colunas com largura igual e o espaçamento entre as colunas será 
+		definido automaticamente pelo valor 1fr */
+	}
+}
+
+/* Media query para telas menores que 480px */
+@media (max-width: 479px) {
+	.image-container {
+		grid-template-columns: 1fr; /*  única coluna com largura 1fr*/ 
+	}
+}

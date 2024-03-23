@@ -1,0 +1,209 @@
+/* Estilos globais */
+* {
+  box-sizing: border-box; /* Define a modelagem de caixa como border-box para incluir padding e borda no tamanho total */
+  margin: 0; /* Define margem padrão como 0 */
+  padding: 0; /* Define preenchimento padrão como 0 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes padrão */
+}
+
+body {
+  margin: 0; /* Define margem do corpo como 0 */
+}
+
+a {
+  text-decoration: none; /* Remove a decoração de sublinhado dos links */
+  color: #333; /* Define a cor do texto dos links */
+}
+
+header {
+  display: flex; /* Define o cabeçalho como um flex container */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Distribui os itens horizontalmente com espaçamento igual */
+  padding: 20px 30px; /* Adiciona preenchimento interno ao cabeçalho */
+  background-color: #1a1a1a; /* Define a cor de fundo do cabeçalho */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao cabeçalho */
+}
+
+nav {
+  flex: 1; /* Faz com que o elemento ocupe o espaço disponível */
+}
+
+nav a {
+  margin-right: 20px; /* Adiciona margem à direita nos itens do menu de navegação */
+  color: #fff; /* Define a cor do texto dos links */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na cor do texto */
+}
+
+nav a:hover {
+  color: #00a8e8; /* Define a cor do texto dos links ao passar o mouse sobre eles */
+}
+
+.cart {
+  display: flex; /* Define o carrinho como um flex container */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  font-size: 18px; /* Define o tamanho da fonte */
+  color: #fff; /* Define a cor do texto */
+}
+
+.cart a {
+  color: #fff; /* Define a cor do texto dos links */
+}
+
+.cart:hover {
+  color: #00a8e8; /* Define a cor do texto do carrinho ao passar o mouse sobre ele */
+}
+
+.cart span {
+  margin-left: 10px; /* Adiciona margem à esquerda no elemento */
+  font-size: 16px; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+main {
+  max-width: 1200px; /* Define a largura máxima do conteúdo principal */
+  margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+  padding: 20px; /* Adiciona preenchimento interno ao conteúdo principal */
+}
+
+h2 {
+  font-size: 32px; /* Define o tamanho da fonte */
+  margin-bottom: 20px; /* Define a margem inferior */
+  color: #333; /* Define a cor do texto */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  letter-spacing: 1px; /* Define o espaçamento entre as letras */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+.product-grid {
+  display: grid; /* Define o layout do grid para o contêiner dos produtos */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define o número de colunas e o tamanho mínimo e máximo das colunas */
+  grid-gap: 30px; /* Define o espaçamento entre as células do grid */
+}
+
+.product-card {
+  border: 1px solid #e0e0e0; /* Adiciona uma borda sólida */
+  padding: 20px; /* Adiciona preenchimento interno */
+  text-align: center; /* Alinha o texto ao centro */
+  position: relative; /* Define a posição do elemento como relativa */
+  background-color: #fff; /* Define a cor de fundo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+  transition: box-shadow 0.3s ease; /* Adiciona uma transição suave */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Altera a sombra ao passar o mouse sobre o elemento */
+}
+
+.product-card img {
+  max-width: 100%; /* Define a largura máxima da imagem */
+  height: auto; /* Define a altura automática para manter a proporção */
+  object-fit: cover; /* Redimensiona a imagem mantendo sua proporção */
+  border-bottom: 1px solid #e0e0e0; /* Adiciona uma borda na parte inferior */
+}
+
+.product-info {
+  position: relative; /* Define a posição como relativa */
+  z-index: 1; /* Define a ordem de empilhamento */
+}
+
+.product-card h3 {
+  font-size: 18px; /* Define o tamanho da fonte */
+  margin-bottom: 10px; /* Define a margem inferior */
+  color: #333; /* Define a cor do texto */
+  white-space: nowrap; /* Impede a quebra de linha */
+  overflow: hidden; /* Oculta o texto que extrapola o contêiner */
+  text-overflow: ellipsis; /* Adiciona reticências ao texto que extrapola o contêiner */
+}
+
+.product-card p {
+  margin-bottom: 20px; /* Define a margem inferior */
+  color: #666; /* Define a cor do texto */
+}
+
+.product-card button {
+  background-color: #00a8e8; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  padding: 10px 20px; /* Adiciona preenchimento */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Define o cursor como ponteiro */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  font-size: 16px; /* Define o tamanho da fonte */
+  white-space: nowrap; /* Impede que o texto vá para duas linhas */
+}
+
+.product-card button:hover {
+  background-color: #007bbd; /* Altera a cor de fundo ao passar o mouse sobre o botão */
+}
+
+footer {
+  background-color: #1a1a1a; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  padding: 20px; /* Adiciona preenchimento */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 480px) {
+  nav a {
+    margin: 5px 0; /* Adiciona margem vertical nos itens do menu de navegação */
+    font-size: 14px; /* Define o tamanho da fonte */
+  }
+  
+  header {
+    padding: 10px 20px; /* Ajusta o padding do cabeçalho */
+  }
+
+  h2 {
+    font-size: 24px; /* Define o tamanho da fonte */
+    margin-bottom: 15px; /* Define a margem inferior */
+  }
+
+  .cart {
+    font-size: 14px; /* Define o tamanho da fonte */
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Define uma única coluna */
+  }
+
+  .product-card {
+    font-size: 14px; /* Define o tamanho da fonte */
+  }
+
+  footer {
+    font-size: 14px; /* Define o tamanho da fonte */
+    padding: 10px 20px; /* Adiciona preenchimento */
+  }
+}
+
+/* Estilos para telas intermediárias (tablets) */
+@media (min-width: 481px) and (max-width: 1024px) {
+  nav a {
+    margin: 10px 0; /* Adiciona margem vertical nos itens do menu de navegação */
+    font-size: 16px; /* Define o tamanho da fonte */
+  }
+
+  .cart {
+    margin: 20px 0; /* Adiciona margem vertical no carrinho */
+    font-size: 16px; /* Define o tamanho da fonte */
+  }
+  
+  .product-card {
+    font-size: 15px; /* Define o tamanho da fonte */
+    margin-bottom: 8px; /* Define a margem inferior */
+  }
+
+  product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr)); /* Duas colunas */
+  }
+}
+
+/* Estilos para telas grandes (desktops e laptops) */
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para evitar que a segunda coluna afunile demais */
+  }
+}

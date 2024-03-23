@@ -1,0 +1,90 @@
+/* Estilos globais */
+body {
+  margin: 0; /* Define as margens do corpo como 0 */
+  padding: 0; /* Define o preenchimento do corpo como 0 */
+  font-family: Arial, sans-serif; /* Define a família de fontes padrão */
+  font-size: 16px; /* Define o tamanho da fonte padrão */
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #251f1f; /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto do cabeçalho */
+  display: flex; /* Define o cabeçalho como um flex container */
+  justify-content: space-between; /* Alinha os elementos do cabeçalho espaçados uniformemente */
+  align-items: center; /* Alinha os elementos verticalmente ao centro */
+  padding: 20px; /* Adiciona preenchimento interno ao cabeçalho */
+}
+
+nav ul {
+  display: flex; /* Define a lista de navegação como um flex container */
+  list-style-type: none; /* Remove os marcadores de lista */
+  margin: 0; /* Define as margens da lista de navegação como 0 */
+  padding: 0; /* Define o preenchimento da lista de navegação como 0 */
+}
+
+nav li {
+  margin-right: 20px; /* Adiciona margem à direita em cada item da lista de navegação */
+}
+
+nav li:last-child {
+  margin-right: 0; /* Remove a margem à direita do último item da lista de navegação */
+}
+
+nav a {
+  color: white; /* Define a cor do texto dos links da navegação como branco */
+  text-decoration: none; /* Remove a decoração de sublinhado dos links */
+}
+
+/* Estilos do conteúdo principal */
+main {
+  display: grid; /* Define o conteúdo principal como um grid container */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define as colunas do grid com tamanho mínimo de 300px e máximo de 1fr */
+  grid-gap: 20px; /* Define o espaçamento entre as células do grid */
+  padding: 20px; /* Adiciona preenchimento interno ao conteúdo principal */
+}
+
+section {
+  background-color: #2ff3e9; /* Cor de fundo das seções */
+  padding: 20px; /* Adiciona preenchimento interno às seções */
+  border-radius: 8px; /* Adiciona borda arredondada às seções */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra às seções */
+}
+
+section h2 {
+  margin-top: 0; /* Define a margem superior do título da seção como 0 */
+}
+
+/* Responsividade para tablets (780px - 1024px) */
+@media (min-width: 780px) and (max-width: 1024px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Atualiza o layout das colunas do grid para tablets */
+  }
+}
+
+/* Responsividade para dispositivos móveis (menos que 780px) */
+@media (max-width: 779px) {
+  /* Ajustes no cabeçalho para dispositivos móveis */
+  header {
+    padding: 10px; /* Reduz o preenchimento do cabeçalho para dispositivos móveis */
+  }
+
+  header h1 {
+    font-size: 18px; /* Reduz o tamanho do título do cabeçalho para dispositivos móveis */
+  }
+
+  /* Ajustes no menu de navegação para dispositivos móveis */
+  nav ul {
+    flex-direction: column; /* Altera a direção do flex container para coluna */
+  }
+
+  nav li {
+    margin-right: 0; /* Remove a margem à direita dos itens da lista de navegação */
+    margin-bottom: 10px; /* Adiciona margem inferior aos itens da lista de navegação */
+  }
+
+  /* Ajustes no conteúdo principal para dispositivos móveis */
+  main {
+    grid-template-columns: 1fr; /* Define uma única coluna no grid para dispositivos móveis */
+  }
+}

@@ -1,0 +1,84 @@
+/* Estilos básicos para o corpo (body) e o documento HTML (html) */
+body,
+html {
+  background-color: #222; /* Cor de fundo para preto */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+  height: 100%; /* Define a altura como 100% da altura da janela de visualização */
+  display: flex; /* Usa o modelo de layout flexível */
+  justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+  align-items: center; /* Centraliza verticalmente os elementos filhos */
+}
+
+/* Container que define a perspectiva para o cubo */
+.container {
+  perspective: 1000px; /* Define a perspectiva para o cubo 3D */
+}
+
+/* Estilo do cubo */
+.cube {
+  width: 200px; /* Largura do cubo */
+  height: 200px; /* Altura do cubo */
+  position: relative; /* Define a posição como relativa para os elementos filhos */
+  transform-style: preserve-3d; /* Mantém a transformação 3D para os elementos filhos */
+  animation: rotate 10s infinite linear; /* Aplica a animação de rotação ao cubo */
+}
+
+/* Estilo de cada face do cubo */
+.cube__face {
+  width: 200px; /* Largura da face do cubo */
+  height: 200px; /* Altura da face do cubo */
+  position: absolute; /* Define a posição como absoluta para as faces do cubo */
+  backface-visibility: hidden; /* Oculta as faces traseiras do cubo */
+}
+
+/* Estilo da imagem dentro de cada face do cubo */
+.cube__face img {
+  width: 100%; /* Largura da imagem */
+  height: 100%; /* Altura da imagem */
+  object-fit: cover; /* Ajusta o tamanho e a proporção da imagem dentro do contêiner */
+}
+
+/* Estilo das faces do cubo */
+.cube__face--front {
+  transform: translateZ(100px); /* Define a posição da face frontal */
+}
+
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(100px); /* Define a posição da face traseira */
+}
+
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(100px); /* Define a posição da face direita */
+}
+
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(100px); /* Define a posição da face esquerda */
+}
+
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(100px); /* Define a posição da face superior */
+}
+
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(100px); /* Define a posição da face inferior */
+}
+
+/* Definição da animação de rotação */
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg); /* Rotação inicial */
+  }
+  25% {
+    transform: rotateX(-45deg) rotateY(90deg); /* Rotação aos 25% */
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(180deg); /* Rotação aos 50% */
+  }
+  75% {
+    transform: rotateX(45deg) rotateY(270deg); /* Rotação aos 75% */
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg); /* Rotação completa */
+  }
+}

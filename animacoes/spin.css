@@ -1,0 +1,33 @@
+/* Configurações básicas para o corpo (body) */
+body {
+  margin: 0; /* Define margem zero para o corpo */
+  padding: 0; /* Define padding zero para o corpo */
+  display: flex; /* Usa o modelo de layout flexível */
+  justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+  align-items: center; /* Centraliza verticalmente os elementos filhos */
+  height: 100vh; /* Define a altura do corpo como 100% da altura da janela do navegador */
+  background-color: #222; /* Cor de fundo da tela, no caso preto */
+}
+
+/* Container para o loader, responsável por centralizar o loader na tela */
+.loader-container {
+  display: flex; /* Usa o modelo de layout flexível */
+  justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+  align-items: center; /* Centraliza verticalmente os elementos filhos */
+}
+
+/* Estilo do loader, o elemento de animação */
+.loader {
+  border: 8px solid rgba(255, 255, 255, 0.2); /* Cor da borda com transparência */
+  border-top: 8px solid #3498db; /* Cor da borda do topo, azul */
+  border-radius: 50%; /* Define o formato da borda como circular */
+  width: 64px; /* Largura do loader */
+  height: 64px; /* Altura do loader */
+  animation: spin 1.2s linear infinite; /* Animação de rotação com duração de 1.2 segundos, linear e infinita */
+}
+
+/* Definição da animação spin usando keyframes */
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Início da animação, sem rotação */
+  100% { transform: rotate(360deg); } /* Fim da animação, rotação completa */
+}

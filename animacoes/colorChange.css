@@ -1,0 +1,32 @@
+/* Configurações básicas para o corpo (body) e o documento HTML (html) */
+body, html {
+    margin: 0; /* Define margem zero para o corpo e HTML */
+    padding: 0; /* Define padding zero para o corpo e HTML */
+    height: 100%; /* Faz com que o corpo e o HTML ocupem 100% da altura da janela do navegador */
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    background-color: #222; /* Cor de fundo para visualização, no caso preto */
+  }
+  
+  /* Estilo da caixa (elemento com a classe .box) */
+  .box {
+    width: 200px; /* Largura da caixa */
+    height: 200px; /* Altura da caixa */
+    background-color: #3498db; /* Cor inicial da caixa, azul */
+    transition: background-color 1s ease; /* Transição suave de cor ao longo de 1 segundo */
+    animation: colorChange 5s infinite alternate; /* Animação de mudança de cor, duração de 5 segundos, infinita e alternada */
+  }
+  
+  /* Definição da animação colorChange usando keyframes */
+  @keyframes colorChange {
+    0% {
+      background-color: #3498db; /* Cor inicial da caixa */
+    }
+    50% {
+      background-color: #e74c3c; /* Cor intermediária da caixa */
+    }
+    100% {
+      background-color: #2ecc71; /* Cor final da caixa */
+    }
+  }

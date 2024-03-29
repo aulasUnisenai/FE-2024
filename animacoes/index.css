@@ -1,0 +1,68 @@
+/* Define estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #222; /* Define a cor de fundo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura para ocupar a tela inteira */
+}
+
+/* Estiliza a lista de animações */
+.animation-list {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 20px; /* Adiciona preenchimento interno */
+    display: grid; /* Usa grid para organizar os itens */
+    grid-template-columns: repeat(2, minmax(200px, 1fr)); /* Cria duas colunas com largura mínima de 200px */
+    grid-auto-rows: auto; /* Define a altura automática das linhas */
+    gap: 20px; /* Define o espaçamento entre os itens */
+}
+
+/* Estiliza cada item da lista de animações */
+.animation-item {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    background-color: #333; /* Define a cor de fundo */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    padding: 20px; /* Adiciona preenchimento interno */
+}
+
+/* Estiliza os links dentro de cada item da lista */
+.animation-item a {
+    text-decoration: none; /* Remove a decoração de texto */
+    color: #fff; /* Define a cor do texto */
+    display: block; /* Faz o link ocupar toda a largura do item */
+}
+
+/* Estiliza o texto dos links ao passar o mouse por cima */
+.animation-item a:hover {
+    color: #ee098f; /* Muda a cor do texto ao passar o mouse */
+}
+
+/* Estiliza os ícones dentro de cada item da lista */
+.animation-item i {
+    font-size: 2rem; /* Define o tamanho do ícone */
+}
+
+/* Estiliza o texto de descrição dentro de cada item da lista */
+.animation-item span {
+    display: block; /* Exibe o texto em bloco */
+    margin-top: 10px; /* Adiciona margem superior */
+    font-size: 1.125rem; /* Define o tamanho do texto */
+}
+
+/* Define estilos para telas menores que 480px */
+@media (max-width: 479px) {
+    .animation-list {
+        grid-template-columns: 1fr; /* Altera para uma coluna em telas menores */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+        padding: 10px; /* Adiciona preenchimento interno */
+    }
+
+    .animation-item {
+        padding: 0.5rem; /* Adiciona preenchimento interno menor */
+    }
+}

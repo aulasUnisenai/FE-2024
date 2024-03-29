@@ -1,0 +1,61 @@
+/* Estilo básico para o corpo (body) */
+body {
+  padding: 100px 0; /* Define o preenchimento superior e inferior do corpo */
+  background-color: #c33; /* Define a cor de fundo para vermelho */
+}
+
+/* Container para o coração */
+.heart-container {
+  position: relative; /* Define a posição relativa para o container */
+  width: 100px; /* Largura do container */
+  height: 100px; /* Altura do container */
+  margin: 0 auto; /* Centraliza horizontalmente o container */
+  display: flex; /* Usa o modelo de layout flexível */
+  justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+  align-items: center; /* Centraliza verticalmente os elementos filhos */
+}
+
+/* Estilo do coração */
+.heart {
+  position: absolute; /* Define a posição absoluta para o coração */
+  width: 100%; /* Largura do coração */
+  height: 100%; /* Altura do coração */
+  animation: heartbeat 1s infinite; /* Aplica a animação de batimento cardíaco */
+}
+
+/* Estilo dos elementos antes e depois do coração (parte superior) */
+.heart:before,
+.heart:after {
+  position: absolute; /* Define a posição absoluta para os elementos antes e depois */
+  content: ""; /* Adiciona conteúdo vazio */
+  left: 50px; /* Posiciona à esquerda do centro */
+  top: 0; /* Posiciona no topo */
+  width: 50px; /* Largura */
+  height: 80px; /* Altura */
+  background: #fff; /* Cor de fundo branca */
+  border-radius: 50px 50px 0 0; /* Define o raio da borda */
+  transform: rotate(-45deg); /* Rotaciona para formar a parte superior do coração */
+  transform-origin: 0 100%; /* Define o ponto de origem da transformação */
+}
+
+/* Estilo dos elementos antes e depois do coração (parte inferior) */
+.heart:after {
+  left: 0; /* Posiciona à esquerda */
+  transform: rotate(45deg); /* Rotaciona para formar a parte inferior do coração */
+  transform-origin: 100% 100%; /* Define o ponto de origem da transformação */
+}
+
+/* Estilo do texto */
+.text {
+  position: relative; /* Define a posição relativa */
+}
+
+/* Definição da animação de batimento cardíaco */
+@keyframes heartbeat {
+  0%, 80%, 100% {
+    transform: scale(0.75); /* Escala do coração durante o batimento cardíaco */
+  }
+  40%, 60% {
+    transform: scale(1); /* Escala do coração durante o batimento cardíaco */
+  }
+}

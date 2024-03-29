@@ -1,0 +1,36 @@
+/* Define estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #222; /* Define a cor de fundo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura para ocupar a tela inteira */
+}
+
+.container {
+    overflow: hidden; /* Oculta qualquer conteúdo que transbordar */
+}
+
+.slide-in {
+    animation: slideIn 4s forwards; /* Executa a animação de slideIn */
+    opacity: 0; /* Inicialmente transparente */
+}
+
+.slide-in img {
+    max-width: 200px; /* Define a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Desloca para fora da tela à esquerda */
+        opacity: 0; /* Inicialmente transparente */
+    }
+    100% {
+        transform: translateX(0); /* Desloca para dentro da tela */
+        opacity: 1; /* Torna visível */
+    }
+}

@@ -1,0 +1,27 @@
+/* Define estilos básicos para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #222; /* Define a cor de fundo */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    display: flex; /* Usa flexbox para alinhar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Define a altura para ocupar a tela inteira */
+}
+
+/* Estilos para a animação FadeIn */
+.fadeIn {
+    opacity: 0; /* Define a opacidade inicial como 0 para ocultar o elemento */
+    color: #fff; /* Define a cor do texto como branco */
+    animation: fadeInAnimation 10s ease forwards; /* Aplica a animação fadeInAnimation */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0; /* Define a opacidade inicial como 0 */
+    }
+    to {
+        opacity: 1; /* Define a opacidade final como 1 para tornar o elemento totalmente visível */
+    }
+}

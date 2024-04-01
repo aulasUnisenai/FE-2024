@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculadora de IMC</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="styles\calculadora.css">
+  <link rel="stylesheet" href="styles\modal.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de IMC</h1>
+    <form>
+      <label for="altura">Altura (m):</label>
+      <input type="number" step="0.01" min="0" id="altura" name="altura" required placeholder="Ex: 1,75">
+      <label for="peso">Peso (kg):</label>
+      <input type="number" step="0.1" min="0" id="peso" name="peso" required placeholder="Ex: 68,5">
+      <button type="button" id="calcular"  class="button" onclick="calcularIMC()">Calcular</button>
+      <button type="button" id="openModalButton" class="button">Saiba mais</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+  <!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2>Sobre</h2>
+    <ol>
+      <li>Como saber o peso ideal?</li>
+      <ol>
+        <li>A obesidade é determinada pelo Índice de Massa Corporal (IMC) que é calculado dividindo-se o peso (em kg) pelo quadrado da altura (m). O resultado revela se o peso está dentro da faixa ideal, abaixo ou acima do desejado.</li>
+      </ol>
+      <li>Classificação do IMC:</li>
+      <ol>
+        <li>Menor que 18,5 - Abaixo do peso;</li>
+        <li>Entre 18,5 e 24,9 - Peso normal;</li>
+        <li>Entre 25,0 e 29,9 - Sobrepeso (acima do peso desejado);</li>
+        <li>Igual ou acima de 30 - Obesidade.</li>
+      </ol>
+      <li>Cálculo do IMC:</li>
+      <ol>
+        <li>IMC = peso (kg) / altura (m) x altura (m).</li>
+        <li>Exemplo: João tem 83 kg e sua altura é 1,75 m.</li>
+        <li>Altura x altura = 1,75 x 1,75 = 3,0625.</li>
+        <li>IMC = 83 divididos por 3,0625 = 27,10.</li>
+        <li>O resultado de 27,10 de IMC indica que João está acima do peso desejado (sobrepeso).</li>
+      </ol>
+    </ol>
+  </div>
+</div>
+  <script src="scripts/calculadora.js"></script>
+  <script src="scripts/modal.js"></script>
+</body>
+</html>

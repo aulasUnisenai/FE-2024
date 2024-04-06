@@ -1,0 +1,66 @@
+/* Define a fonte para todos os elementos */
+* {
+    font-family: 'Roboto', sans-serif, Arial, sans-serif;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posição fixa na tela */
+    inset: 0; /* Margens superior, direita, inferior e esquerda definidas como 0 */
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+    overflow: auto; /* Adicionar rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente */
+    justify-content: center; /* Centraliza na horizontal */
+    align-items: center; /* Centraliza na vertical */
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #2c3e50; /* Cor de fundo do conteúdo do modal */
+    padding: 20px; /* Espaçamento interno do conteúdo do modal */
+    border-radius: 10px; /* Borda arredondada */
+    width: 90%; /* Largura do modal */
+    max-width: 600px; /* Largura máxima do modal */
+    position: relative; /* Para permitir o posicionamento do botão de fechar */
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilo para os itens da lista no modal */
+.modal-content ol {
+    list-style-type: decimal; /* Define a numeração dos itens */
+    padding-left: 20px; /* Adiciona um recuo à esquerda para a numeração */
+}
+
+/* Estilo para os itens do modal */
+.modal-content li {
+    margin-bottom: 10px; /* Margem inferior para os itens da lista */
+    font-weight: bold; /* Deixa os itens em negrito */
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    color: #aaa; /* Cor do botão de fechar */
+    position: absolute; /* Posicionamento absoluto em relação ao modal */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Posiciona o botão à direita */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+}
+
+/* Estilo para o botão de fechar ao passar o mouse ou receber foco */
+.close:hover,
+.close:focus {
+    color: #2c3e50; /* Cor do botão de fechar ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado ao passar o mouse */
+    cursor: pointer; /* Altera o cursor ao passar o mouse */
+}
+
+/* Regras de mídia para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Reduz a largura do modal para telas menores */
+        max-width: 95%; /* Reduz a largura máxima do modal */
+    }
+}

@@ -1,0 +1,121 @@
+/* Define as cores principais a serem utilizadas */
+:root {
+  --primary-color: #3498db; /* Cor primária */
+  --secondary-color: #2c3e50; /* Cor secundária */
+  --font-color: #eeeeee; /* Cor do texto */
+  --resultado-color: #222; /* Cor de fundo da seção de resultados */
+}
+
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif, Arial, sans-serif; /* Define a fonte */
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #002240 0%, #6096BA 100%); /* Fundo gradiente */
+  color: var(--font-color); /* Cor do texto */
+  min-height: 100vh; /* Altura mínima da viewport */
+  display: flex; /* Exibe como flex container */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Container */
+.container {
+  width: 90%; /* Largura do container */
+  max-width: 600px; /* Largura máxima */
+  margin: 20px auto; /* Margem automática */
+  padding: 20px; /* Preenchimento interno */
+  background: rgba(255, 255, 255, 0.15); /* Fundo semi-transparente */
+  backdrop-filter: blur(10px); /* Efeito glassmorphism */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra */
+}
+
+/* Estilo para o título principal */
+h1 {
+  margin-top: 0; /* Remove a margem superior */
+  text-align: center; /* Centraliza o texto */
+  font-size: 2rem; /* Tamanho da fonte */
+  color: var(--primary-color); /* Cor do texto */
+}
+
+/* Formulário */
+form {
+  display: flex; /* Exibe como flex container */
+  flex-direction: column; /* Direção das flex items */
+  gap: 10px; /* Espaçamento entre as flex items */
+  margin-top: 20px; /* Margem superior */
+}
+
+/* Rótulos */
+label {
+  font-size: 1.2rem; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #fff; /* Cor do texto */
+}
+
+/* Inputs */
+input {
+  padding: 10px; /* Preenchimento */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  border-radius: 5px; /* Borda arredondada */
+  border: none; /* Sem borda */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+  color: #fff; /* Cor do texto */
+}
+
+/* Placeholder dos inputs */
+input::placeholder {
+  color: #fff; /* Cor do placeholder */
+}
+
+/* Botões */
+.button {
+  background-color: rgba(255, 255, 255, 0.3); /* Fundo semi-transparente */
+  color: #fff; /* Cor do texto */
+  padding: 10px; /* Preenchimento */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Borda arredondada */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor ao passar */
+  transition: background-color 0.2s ease-in-out; /* Transição suave */
+}
+
+/* Botões ao passar o mouse */
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo semi-transparente mais claro */
+}
+
+/* Seção de Resultados */
+#resultado {
+  display: none; /* Inicialmente oculto */
+  margin-top: 20px; /* Margem superior */
+  text-align: center; /* Centraliza texto */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  background-color: var(--resultado-color); /* Cor de fundo */
+  color: var(--font-color); /* Cor do texto */
+  border-radius: 5px; /* Borda arredondada */
+  padding: 10px; /* Preenchimento */
+  white-space: pre-line; /* Permite quebras de linha automáticas */
+}
+
+/* Media query para tablets */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Reduz a largura do container */
+    margin: 20px auto; /* Margem automática */
+  }
+
+  label,
+  input,
+  .button,
+  #resultado {
+    font-size: 1rem; /* Reduz o tamanho da fonte dos elementos */
+    margin-top: 8px; /* Reduz a margem superior */
+  }
+}

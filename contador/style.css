@@ -1,0 +1,196 @@
+/* Definição das variáveis de cores */
+:root {
+    --laranja-brilhante: #FF9F1C; /* Laranja brilhante */
+    --laranja-claro: #FFBF69; /* Laranja claro */
+    --rosa-suave: #CB997E; /* Rosa suave */
+    --pessego-palido: #FFE8D6; /* Pêssego pálido */
+    --azul-escuro: #172541; /* Azul escuro */
+    --dark-bg: #222; /* Fundo escuro */
+    --dark-text: #fff; /* Texto claro */
+}
+
+/* Estilos gerais para todos os elementos */
+* {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Define a caixa de modelo como border-box para incluir o preenchimento e a borda no cálculo do tamanho total */
+}
+
+/* Estilos específicos para o corpo do documento */
+body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do texto */
+    background-color: var(--pessego-palido); /* Cor de fundo do corpo */
+    color: var(--azul-escuro); /* Cor do texto */
+    display: flex; /* Exibe os elementos como um flex container */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    min-height: 100vh; /* Define a altura mínima como 100% da altura da viewport */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para suavizar mudanças de cores */
+}
+
+/* Estilo para o container principal */
+.container {
+    display: flex; /* Permite que o container use flexbox */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    max-width: 800px; /* Define a largura máxima do container */
+    width: 100%; /* Define a largura do container como 100% */
+    padding: 20px; /* Adiciona preenchimento interno */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    background-color: var(--pessego-palido); /* Cor de fundo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Adiciona sombra */
+}
+
+/* Estilo para o switch de alternância do modo */
+.mode-switch {
+    display: flex; /* Permite que o switch use flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin-bottom: 20px; /* Adiciona margem inferior */
+}
+
+/* Estilo para as etiquetas de modo */
+.mode-label {
+    margin: 0 10px; /* Reduzindo a repetição de margem */
+}
+
+/* Estilo para o switch propriamente dito */
+.switch {
+    position: relative; /* Define a posição como relativa */
+    display: inline-block; /* Permite que o switch seja exibido em linha */
+    width: 60px; /* Define a largura do switch */
+    height: 34px; /* Define a altura do switch */
+}
+
+/* Estilo para o input dentro do switch */
+.switch input {
+    opacity: 0; /* Torna o input invisível */
+    width: 0; /* Define a largura do input como 0 */
+    height: 0; /* Define a altura do input como 0 */
+}
+
+/* Estilo para o controle deslizante do switch */
+.slider {
+    position: absolute; /* Define a posição como absoluta */
+    cursor: pointer; /* Altera o cursor ao passar sobre o controle */
+    inset: 0; /* Define as margens do controle como 0 */
+    background-color: #ccc; /* Define a cor de fundo do controle */
+    transition: .4s; /* Adiciona transição suave */
+    border-radius: 34px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilo para o marcador do controle deslizante */
+.slider:before {
+    position: absolute; /* Define a posição como absoluta */
+    content: ""; /* Adiciona conteúdo ao marcador */
+    height: 26px; /* Define a altura do marcador */
+    width: 26px; /* Define a largura do marcador */
+    left: 4px; /* Define a posição esquerda do marcador */
+    bottom: 4px; /* Define a posição inferior do marcador */
+    background-color: #fff; /* Define a cor de fundo do marcador */
+    transition: .4s; /* Adiciona transição suave */
+    border-radius: 50%; /* Adiciona bordas arredondadas */
+}
+
+/* Define o controle deslizante com bordas arredondadas */
+.slider.round {
+    border-radius: 34px; /* Bordas arredondadas para o controle deslizante */
+}
+
+/* Define o marcador do controle deslizante com bordas arredondadas */
+.slider.round:before {
+    border-radius: 50%; /* Bordas arredondadas para o marcador do controle deslizante */
+}
+
+/* Define a cor de fundo do controle deslizante quando está marcado */
+input:checked + .slider {
+    background-color: #2196F3; /* Azul quando o controle está marcado */
+}
+
+/* Define a sombra do controle deslizante quando está em foco */
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3; /* Sombra azul quando o controle está em foco */
+}
+
+/* Define a posição do marcador do controle deslizante quando está marcado */
+input:checked + .slider:before {
+    transform: translateX(26px); /* Move o marcador para a posição marcada */
+}
+
+/* Define o container dos relógios */
+.clock-container {
+    display: flex; /* Exibe os relógios em linha */
+    justify-content: center; /* Centraliza os relógios horizontalmente */
+    align-items: center; /* Centraliza os relógios verticalmente */
+    width: 100%; /* Largura total */
+    margin-top: 20px; /* Margem superior */
+    flex-wrap: wrap; /* Quebra de linha automática quando necessário */
+}
+
+/* Define a coluna dos relógios */
+.clock-column {
+    text-align: center; /* Alinha o conteúdo dos relógios ao centro */
+    margin: 0 10px; /* Margens laterais */
+}
+
+/* Define o rótulo dos relógios */
+.clock-label {
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-size: 12px; /* Tamanho da fonte */
+    margin-bottom: 5px; /* Margem inferior */
+    color: var(--rosa-suave); /* Cor do texto */
+}
+
+/* Define o timer dos relógios */
+.clock-timer {
+    font-size: 48px; /* Tamanho da fonte */
+    font-weight: bold; /* Espessura da fonte */
+    letter-spacing: 2px; /* Espaçamento entre caracteres */
+    color: var(--laranja-brilhante); /* Cor do texto */
+}
+
+/* Estilo para o input do relógio e input de tipo data */
+.clock-input,
+input[type="date"] {
+    padding: 10px; /* Espaçamento interno */
+    border: 2px solid #ddd; /* Estilo da borda */
+    border-radius: 5px; /* Raio da borda */
+    font-size: 16px; /* Tamanho da fonte */
+    text-align: center; /* Alinhamento do texto */
+    color: var(--azul-escuro); /* Cor do texto */
+    background-color: var(--laranja-claro); /* Cor de fundo */
+    width: 100%; /* Largura total */
+    max-width: 400px; /* Largura máxima */
+}
+
+/* Estilo para o input de tipo data quando está em foco */
+input[type="date"]:focus {
+    outline: none; /* Remove o contorno padrão */
+    border-color: var(--laranja-brilhante); /* Cor da borda ao focar */
+}
+
+/* Estilo para todos os elementos e inputs quando o modo escuro está ativado */
+.dark-mode *,
+.dark-mode input {
+    background-color: var(--dark-bg); /* Cor de fundo */
+    color: var(--dark-text); /* Cor do texto */
+}
+
+/* Define as regras de estilo para telas com largura máxima de 768px */
+@media screen and (max-width: 768px) {
+    /* Reduz o preenchimento do container para melhorar a aparência em telas menores */
+    .container {
+        padding: 10px;
+    }
+
+    /* Altera o layout dos elementos do relógio para coluna em telas menores */
+    .clock-container {
+        flex-direction: column;
+        margin-top: 10px; /* Adiciona margem superior para separação */
+    }
+
+    /* Adiciona margem inferior aos elementos do relógio para separação entre eles */
+    .clock-column {
+        margin-bottom: 20px;
+    }
+}

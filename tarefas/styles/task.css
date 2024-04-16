@@ -1,0 +1,134 @@
+/* Container principal */
+.container {
+    max-width: ; 
+    margin: ; 
+    padding: ; 
+    background: ;
+    border-radius: ;
+    box-shadow: ; 
+    border: ;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: ; 
+    color: ;
+    font-size: ;
+    margin-bottom: ; 
+  }
+  
+  /* Contador de tarefas */
+  #taskCount {
+    font-size: ;
+    color: ;
+    display: ;
+    justify-content: ;
+    gap: ;
+    width: ;
+  }
+  
+  /* Estilo para o formulário de tarefas */
+  #taskForm {
+  display: ;
+  gap: ;
+  margin-top: ;
+  width: ;
+  }
+  
+  /* Entrada de tarefa */
+  #taskInput {
+  flex: ;
+  padding: ;
+  font-size: ;
+  border: ;
+  border-radius: ;
+  background-color: ;
+  color: ;
+  box-sizing: ;
+  }
+  
+  /* Botão de adicionar tarefa */
+  #addTaskBtn {
+    padding: ; 
+    font-size: ;
+    background-color: ;
+    color: ;
+    border: ;
+    border-radius: ;
+    cursor: ;
+    transition: ;
+    box-shadow: ;
+  }
+  
+  /* Lista de tarefas */
+  #taskList {
+    width: ;
+    margin-top: ;
+    padding: ;
+    list-style: ;
+  }
+  
+  /* Cada tarefa na lista */
+  li {
+    display: ;
+    justify-content:;
+    align-items: ;
+    padding: ;
+    margin-top: ;
+    background-color: ;
+    border: 1px solid ;
+    border-radius: ;
+    box-shadow: ;
+    width: ; 
+    box-sizing: ;
+  }
+  
+  /* Nome da tarefa */
+  .task-name {
+    flex: ;
+    color: ;
+    font-size: ;
+    margin-right: ;
+  }  
+  
+  /* Ações de tarefa */
+  .task-actions {
+    display: ;
+    gap: ;
+  } 
+  
+  /* Botões de tarefa */
+  .task-btn {
+    padding: ;
+    font-size: ;
+    color: ;
+    border: ;
+    border-radius: ;
+    cursor: ;
+    transition:; 
+  }
+  
+  /* Cores específicas para botões de tarefa */
+  .task-btn.edit {
+  background-color: ;
+  }
+  
+  .task-btn.delete {
+  background-color: ;
+  }
+  
+  .task-btn.complete {
+  background-color: ;
+  }
+  
+  /* Hover nos botões de tarefa */
+  .task-btn:hover {
+  opacity: ;
+  }
+  
+  /* Mensagem de erro */
+  .error-message {
+    display: ;
+    color: ;
+    margin-top: ;
+  }  

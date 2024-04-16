@@ -1,0 +1,27 @@
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+      padding: ; 
+      margin: ; 
+  }
+
+  #taskForm {
+      flex-direction: ; 
+      gap: ; 
+      width: ; 
+  }
+
+  #taskInput {
+      width: ; 
+      margin-bottom: ; 
+  }
+    
+  #addTaskBtn {
+      width: ; 
+  }
+    
+  #taskCount {
+      flex-direction: ; 
+      align-items: ; 
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\colors.css">
+    <link rel="stylesheet" href="styles\global.css">
+    <link rel="stylesheet" href="styles\task.css">
+    <link rel="stylesheet" href="styles\responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <div id="taskCount">
+            <span><i class="fas fa-tasks"></i> Total de tarefas: <span id="totalTasks">0</span></span> |
+            <span><i class="fas fa-clipboard-list"></i> Pendentes: <span id="pendingTasks">0</span></span> |
+            <span><i class="fas fa-check-circle"></i> Concluídas: <span id="completedTasks">0</span></span>
+        </div>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Digite uma nova tarefa (até 30 caracteres)" maxlength="30">
+            <button type="button" id="addTaskBtn"><i class="fas fa-plus"></i> Adicionar</button>
+        </form>
+        <div id="errorMessage" class="error-message"></div>
+        <ul id="taskList"></ul>
+    </div>
+    <script type="module" src="scripts\main.js"></script>
+</body>
+</html>

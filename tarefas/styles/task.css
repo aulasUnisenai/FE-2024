@@ -1,134 +1,133 @@
 /* Container principal */
 .container {
-    max-width: ; 
-    margin: ; 
-    padding: ; 
-    background: ;
-    border-radius: ;
-    box-shadow: ; 
-    border: ;
+    max-width: 800px; /* Define a largura máxima do container */
+    margin: 20px auto; /* Centraliza o container na tela */
+    padding: 20px; /* Adiciona preenchimento ao container */
+    background: var(--cor-vidro); /* Cor de fundo do container */
+    border-radius: 8px; /* Arredonda os cantos do container */
+    box-shadow: 0 4px 6px var(--cor-sombra); /* Adiciona sombra ao container */
+    border: 1px solid var(--cor-borda); /* Adiciona borda ao container */
   }
-  
-  /* Título */
-  h1 {
-    text-align: ; 
-    color: ;
-    font-size: ;
-    margin-bottom: ; 
+
+/* Título */
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+    color: var(--cor-texto); /* Cor do texto do título */
+    font-size: 2rem; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
   }
-  
-  /* Contador de tarefas */
-  #taskCount {
-    font-size: ;
-    color: ;
-    display: ;
-    justify-content: ;
-    gap: ;
-    width: ;
+
+/* Contador de tarefas */
+#taskCount {
+    font-size: 14px; /* Tamanho da fonte do contador */
+    color: var(--cor-texto-secundario); /* Cor do texto do contador */
+    display: flex; /* Coloca os elementos em linha */
+    justify-content: center; /* Centraliza os elementos na linha */
+    gap: 10px; /* Adiciona espaço entre os elementos */
+    width: 100%; /* Ocupa a largura total do container */
   }
-  
-  /* Estilo para o formulário de tarefas */
-  #taskForm {
-  display: ;
-  gap: ;
-  margin-top: ;
-  width: ;
+
+/* Estilo para o formulário de tarefas */
+#taskForm {
+  display: flex; /* Coloca os elementos em linha */
+  gap: 10px; /* Adiciona espaço entre os elementos */
+  margin-top: 20px; /* Adiciona espaço acima do formulário */
+  width: 100%; /* Ocupa a largura total do container */
+}
+
+/* Entrada de tarefa */
+#taskInput {
+  flex: 1; /* Ocupa o máximo de espaço disponível na linha */
+  padding: 10px; /* Adiciona preenchimento à entrada */
+  font-size: 16px; /* Tamanho da fonte da entrada */
+  border: 1px solid var(--cor-borda); /* Adiciona borda à entrada */
+  border-radius: 6px; /* Arredonda os cantos da entrada */
+  background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo da entrada com transparência */
+  color: var(--cor-texto); /* Cor do texto da entrada */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Botão de adicionar tarefa */
+#addTaskBtn {
+    padding: 10px 20px; /* Adiciona preenchimento ao botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: var(--cor-primaria); /* Cor de fundo do botão */
+    color: var(--cor-texto); /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 6px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para o formato "mão" ao passar por cima */
+    transition: opacity 0.3s ease; /* Animação de opacidade ao passar o mouse */
+    box-shadow: 0 2px 4px var(--cor-sombra); /* Adiciona sombra ao botão */
   }
-  
-  /* Entrada de tarefa */
-  #taskInput {
-  flex: ;
-  padding: ;
-  font-size: ;
-  border: ;
-  border-radius: ;
-  background-color: ;
-  color: ;
-  box-sizing: ;
+
+/* Lista de tarefas */
+#taskList {
+    width: 100%; /* Ocupa a largura total do container */
+    margin-top: 20px; /* Adiciona espaço acima da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+    list-style: none; /* Remove o estilo padrão de marcador da lista */
   }
-  
-  /* Botão de adicionar tarefa */
-  #addTaskBtn {
-    padding: ; 
-    font-size: ;
-    background-color: ;
-    color: ;
-    border: ;
-    border-radius: ;
-    cursor: ;
-    transition: ;
-    box-shadow: ;
+
+/* Cada tarefa na lista */
+li {
+    display: flex; /* Coloca os elementos da tarefa em linha */
+    justify-content: space-between; /* Distribui os elementos entre as margens */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+    padding: 10px; /* Adiciona preenchimento à tarefa */
+    margin-top: 10px; /* Adiciona espaço entre as tarefas */
+    background-color: var(--cor-vidro); /* Cor de fundo da tarefa */
+    border: 1px solid var(--cor-borda); /* Adiciona borda à tarefa */
+    border-radius: 6px; /* Arredonda os cantos da tarefa */
+    box-shadow: 0 2px 4px var(--cor-sombra); /* Adiciona sombra à tarefa */
+    width: 100%; /* Ocupa a largura total do container */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
   }
-  
-  /* Lista de tarefas */
-  #taskList {
-    width: ;
-    margin-top: ;
-    padding: ;
-    list-style: ;
-  }
-  
-  /* Cada tarefa na lista */
-  li {
-    display: ;
-    justify-content:;
-    align-items: ;
-    padding: ;
-    margin-top: ;
-    background-color: ;
-    border: 1px solid ;
-    border-radius: ;
-    box-shadow: ;
-    width: ; 
-    box-sizing: ;
-  }
-  
-  /* Nome da tarefa */
-  .task-name {
-    flex: ;
-    color: ;
-    font-size: ;
-    margin-right: ;
+
+/* Nome da tarefa */
+.task-name {
+    flex: 1; /* Ocupa o máximo de espaço disponível na linha */
+    color: var(--cor-texto); /* Cor do texto do nome da tarefa */
+    font-size: 16px; /* Tamanho da fonte do nome da tarefa */
+    margin-right: 10px; /* Adiciona espaço entre o nome e as ações */
   }  
-  
-  /* Ações de tarefa */
-  .task-actions {
-    display: ;
-    gap: ;
+
+/* Ações de tarefa */
+.task-actions {
+    display: flex; /* Coloca os botões de ação em linha */
+    gap: 10px; /* Adiciona espaço entre os botões */
   } 
-  
-  /* Botões de tarefa */
-  .task-btn {
-    padding: ;
-    font-size: ;
-    color: ;
-    border: ;
-    border-radius: ;
-    cursor: ;
-    transition:; 
+
+/* Botões de tarefa */
+.task-btn {
+    padding: 8px 12px; /* Adiciona preenchimento aos botões */
+    font-size: 14px; /* Tamanho da fonte dos botões */
+    color: var(--cor-texto); /* Cor do texto dos botões */
+    border: none; /* Remove a borda dos botões */
+    border-radius: 6px; /* Arredonda os cantos dos botões */
+    cursor: pointer; /* Muda o cursor para o formato "mão" ao passar por cima */
+    transition: opacity 0.3s ease; /* Animação de opacidade ao passar o mouse */
   }
-  
-  /* Cores específicas para botões de tarefa */
-  .task-btn.edit {
-  background-color: ;
+
+/* Cores específicas para botões de tarefa */
+.task-btn.edit {
+  background-color: var(--cor-aviso); /* Cor de fundo do botão editar */
+}
+
+.task-btn.delete {
+  background-color: var(--cor-perigo); /* Cor de fundo do botão excluir */
+}
+
+.task-btn.complete {
+  background-color: var(--cor-sucesso); /* Cor de fundo do botão concluir */
+}
+
+/* Hover nos botões de tarefa */
+.task-btn:hover {
+  opacity: 0.9; /* Diminui a opacidade ao passar o mouse */
+}
+
+.error-message {
+    display: none; /* Começa invisível */
+    color: rgb(255, 0, 0); /* Cor de texto para chamar a atenção */
+    margin-top: 10px; /* Adiciona espaço entre a mensagem e o formulário */
   }
-  
-  .task-btn.delete {
-  background-color: ;
-  }
-  
-  .task-btn.complete {
-  background-color: ;
-  }
-  
-  /* Hover nos botões de tarefa */
-  .task-btn:hover {
-  opacity: ;
-  }
-  
-  /* Mensagem de erro */
-  .error-message {
-    display: ;
-    color: ;
-    margin-top: ;
-  }  

@@ -1,9 +1,9 @@
 /* Estilo global para o corpo */
 body {
-    font-family: 'Roboto', sans-serif; 
-    margin: 0; 
-    padding: 0; 
-    background: var(--cor-fundo);
-    color: var(--cor-texto); 
-    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    background: var(--cor-fundo); /* Cor de fundo da página */
+    color: var(--cor-texto); /* Cor do texto principal */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
   }

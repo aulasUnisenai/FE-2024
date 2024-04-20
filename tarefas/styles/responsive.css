@@ -1,27 +1,27 @@
 /* Responsividade */
 @media (max-width: 768px) {
-  .container {
-      padding: ; 
-      margin: ; 
-  }
-
-  #taskForm {
-      flex-direction: ; 
-      gap: ; 
-      width: ; 
-  }
-
-  #taskInput {
-      width: ; 
-      margin-bottom: ; 
-  }
-    
-  #addTaskBtn {
-      width: ; 
-  }
-    
-  #taskCount {
-      flex-direction: ; 
-      align-items: ; 
+    .container {
+        padding: 15px; /* Diminui o padding do container em telas menores */
+        margin: 10px; /* Diminui a margem do container em telas menores */
     }
+
+    #taskForm {
+        flex-direction: column; /* Organiza o formulário em coluna em telas menores */
+        gap: 10px; /* Mantém o espaçamento entre elementos do formulário */
+        width: 100%; /* Garante que o formulário ocupe a largura total */
+    }
+
+    #taskInput {
+        width: 100%; /* Faz a entrada de tarefa ocupar a largura total */
+        margin-bottom: 10px; /* Adiciona espaço entre a entrada e o botão */
+    }
+      
+    #addTaskBtn {
+        width: 100%; /* Faz o botão ocupar a largura total */
+    }
+      
+    #taskCount {
+        flex-direction: column; /* Organiza o contador em coluna em telas menores */
+        align-items: center; /* Centraliza os elementos do contador */
+      }
 }

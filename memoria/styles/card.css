@@ -1,0 +1,48 @@
+/* Estilos para as cartas do jogo */
+.card {
+  width: ;
+  height: ;
+  perspective: ;
+}
+
+/* Estilos para o conteúdo interno das cartas */
+.card .card-inner {
+  width: ;
+  height: ;
+  transform-style: ; 
+  transition: ;   
+}
+
+/* Estilos para as cartas que foram viradas */
+.card.flipped .card-inner {
+  transform: ;  /
+}
+
+/* Estilos para o lado frontal e traseiro das cartas */
+.card-front,
+.card-back {
+  position: ; 
+  width: ;
+  height: ;
+  backface-visibility: ; 
+  display: ;
+  align-items: ;
+  justify-content: ;
+  font-size: ; 
+  border-radius: ;  
+  box-shadow: ; 
+  background-color: ; 
+}
+
+/* Estilos para a face traseira da carta */
+.card-back {
+  transform: ; 
+}
+
+/* Estilos de hover para as cartas */
+.card:hover {
+  transform:; 
+  box-shadow:;
+  cursor: ;
+  border-radius: ;
+}

@@ -1,0 +1,24 @@
+/* Estilos para os elementos de pontuação e movimentos */
+#score,
+#moves {
+  margin-top: ; 
+  font-size: ;
+  font-weight: ;
+  color: ;
+  padding: ;
+  border-radius: ;
+  background-color: ;
+  border: ;
+  box-shadow: ;
+  transition: ;
+  width: ;
+  text-align: ;
+  display: ;
+}
+
+/* Estilos de hover para os elementos de pontuação e movimentos */
+#score:hover,
+#moves:hover {
+  background-color: ;
+  box-shadow: ;
+}

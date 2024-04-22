@@ -1,0 +1,17 @@
+/* Estilos para o corpo da página */
+body {
+  display: ;
+  justify-content: ;
+  align-items: ;
+  flex-direction: ; 
+  height: ; 
+  margin: ; 
+  background-color: ; 
+}
+
+/* Estilos para o contêiner do jogo */
+#game-container {
+  display: ;
+  grid-template-columns: ;
+  grid-gap: ;
+}

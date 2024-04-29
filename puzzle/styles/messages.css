@@ -1,0 +1,32 @@
+/* Estiliza a mensagem de conclusão do quebra-cabeça */
+.completed-message {
+    font-size: ;
+    font-weight: ;
+    color: ;
+    margin-bottom: ;
+  }
+  
+  /* Estiliza as estatísticas do quebra-cabeça */
+  .stats {
+    font-size: ;
+    margin-bottom: ;
+  }
+  
+  /* Estiliza o ícone de troféu */
+  .trophy-icon {
+    color: ;
+    margin-bottom: ;
+  }
+  
+  /* Estiliza o ícone de reiniciar */
+  .restart-icon {
+    color: ;
+    cursor: ;
+    margin-top: ;
+    transition: ;
+  }
+  
+  /* Estiliza o hover do ícone de reiniciar */
+  .restart-icon:hover {
+    color: ;
+  }  

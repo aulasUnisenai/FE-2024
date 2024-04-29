@@ -1,0 +1,14 @@
+/* Define a fonte e a alinhamento do texto para o corpo do documento */
+body {
+    font-family: ;
+    text-align: ;
+  }
+  
+  /* Container principal */
+  .container {
+    display: ;
+    flex-direction: ;
+    align-items: ;
+    justify-content:;
+    height: ;
+  }

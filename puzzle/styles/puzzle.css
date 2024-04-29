@@ -1,0 +1,33 @@
+/* Layout do container do quebra-cabeça */
+.puzzle-container {
+    display: ;
+    grid-template-columns: ;
+    grid-gap: ;
+    margin: ;
+  }
+  
+  /* Peças individuais do quebra-cabeça */
+  .puzzle-piece {
+    width: ;
+    height: ;
+    display: ;
+    align-items: ;
+    justify-content: ;
+    font-size: ;
+    cursor: ;
+    background-color: ;
+    color: ;
+    border-radius: ;
+    user-select: ;
+    transition: ;
+  }
+  
+  /* Hover das peças do quebra-cabeça */
+  .puzzle-piece:hover {
+    background-color: ;
+  }
+  
+  /* Container de quebra-cabeça completo */
+  #completed-puzzle {
+    display: ;
+  }  

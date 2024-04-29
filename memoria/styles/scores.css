@@ -1,24 +1,24 @@
 /* Estilos para os elementos de pontuação e movimentos */
 #score,
 #moves {
-  margin-top: ; 
-  font-size: ;
-  font-weight: ;
-  color: ;
-  padding: ;
-  border-radius: ;
-  background-color: ;
-  border: ;
-  box-shadow: ;
-  transition: ;
-  width: ;
-  text-align: ;
-  display: ;
+  margin-top: 20px; /* Margem superior */
+  font-size: 18px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  color: #101820; /* Cor do texto */
+  padding: 12px 24px; /* Preenchimento interno */
+  border-radius: 5px; /* Arredondar as bordas */
+  background-color: #FEE715; /* Cor de fundo */
+  border: 2px solid background-color; /* Borda sutil */
+  box-shadow: 0 2px 4px #924aa0; /* Adicionar uma sombra sutil */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Adicionar transições suaves */
+  width: 160px; /* Definir uma largura fixa */
+  text-align: center; /* Centralizar o texto */
+  display: inline-block; /* Exibir como um bloco inline */
 }
 
 /* Estilos de hover para os elementos de pontuação e movimentos */
 #score:hover,
 #moves:hover {
-  background-color: ;
-  box-shadow: ;
+  background-color: #F9A602; /* Alterar a cor de fundo ao passar o mouse */
+  box-shadow: 0 4px 6px #924aa0; /* Ajustar a sombra ao passar o mouse */
 }

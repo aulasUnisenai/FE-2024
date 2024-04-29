@@ -1,48 +1,52 @@
 /* Estilos para as cartas do jogo */
 .card {
-  width: ;
-  height: ;
-  perspective: ;
+  /* Definir as dimensões das cartas */
+  width: 100px;
+  height: 100px;
+  perspective: 1000px; /* Definir a perspectiva 3D para os elementos filhos */
 }
 
 /* Estilos para o conteúdo interno das cartas */
 .card .card-inner {
-  width: ;
-  height: ;
-  transform-style: ; 
-  transition: ;   
+  /* Definir as dimensões das cartas internas */
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Definir o estilo de transformação 3D */
+  transition: transform 0.3s ease-in-out;   /* Adicionar transição suave para as transformações */
 }
 
 /* Estilos para as cartas que foram viradas */
 .card.flipped .card-inner {
-  transform: ;  /
+  transform: rotateY(180deg);  /* Rotacionar a carta em torno do eixo Y para mostrar o lado de trás */
 }
 
 /* Estilos para o lado frontal e traseiro das cartas */
 .card-front,
 .card-back {
-  position: ; 
-  width: ;
-  height: ;
-  backface-visibility: ; 
-  display: ;
-  align-items: ;
-  justify-content: ;
-  font-size: ; 
-  border-radius: ;  
-  box-shadow: ; 
-  background-color: ; 
+  position: absolute; /* Posição absoluta para cobrir completamente o conteúdo da carta */
+  /* Dimensões das cartas */
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Ocultar a face traseira durante as transformações */
+  /* Centralizar o conteúdo vertical e horizontalmente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Definir o tamanho da fonte */
+  border-radius: 8px;  /* Suavizar as bordas */
+  box-shadow: 0 0 5px #924aa0; /* Adicionar sombra à carta */
+  background-color: #FEE715; /* Cor de fundo */
 }
 
 /* Estilos para a face traseira da carta */
 .card-back {
-  transform: ; 
+  transform: rotateY(180deg);  /* Rotacionar a face traseira em torno do eixo Y */
 }
 
 /* Estilos de hover para as cartas */
 .card:hover {
-  transform:; 
-  box-shadow:;
-  cursor: ;
-  border-radius: ;
+  transform: scale(1.05); /* Aumentar o tamanho da carta em 5% */
+  box-shadow: 0 0 5px #924aa0; /* Sombra sutil */
+  cursor: pointer; /* Mudar o cursor do mouse */
+  border-radius: 8px; /* Arredondar as bordas */
 }

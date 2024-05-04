@@ -1,33 +1,33 @@
 /* Layout do container do quebra-cabeça */
 .puzzle-container {
-    display: ;
-    grid-template-columns: ;
-    grid-gap: ;
-    margin: ;
+    display: grid; /* Utiliza o modelo de layout grid para organizar os elementos */
+    grid-template-columns: repeat(4, 80px); /* Cria uma grade com 4 colunas de 80px cada */
+    grid-gap: 5px; /* Define o espaçamento entre as células da grade */
+    margin: 20px auto; /* Define as margens superior e inferior como 20px e centraliza horizontalmente */
   }
   
   /* Peças individuais do quebra-cabeça */
   .puzzle-piece {
-    width: ;
-    height: ;
-    display: ;
-    align-items: ;
-    justify-content: ;
-    font-size: ;
-    cursor: ;
-    background-color: ;
-    color: ;
-    border-radius: ;
-    user-select: ;
-    transition: ;
+    width: 80px; /* Define a largura das peças como 80px */
+    height: 80px; /* Define a altura das peças como 80px */
+    display: flex; /* Utiliza o modelo de layout flexível para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo das peças */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo das peças */
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    cursor: pointer; /* Altera o cursor para indicar que as peças são clicáveis */
+    background-color: #01050c; /* Define a cor de fundo das peças */
+    color: #ffffff; /* Define a cor do texto das peças como branco */
+    border-radius: 5px; /* Adiciona bordas arredondadas às peças */
+    user-select: none; /* Impede a seleção de texto dentro das peças */
+    transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave na mudança de cor de fundo */
   }
   
   /* Hover das peças do quebra-cabeça */
   .puzzle-piece:hover {
-    background-color: ;
+    background-color: #34a853; /* Cor de fundo das peças ao passar o mouse sobre elas */
   }
   
   /* Container de quebra-cabeça completo */
   #completed-puzzle {
-    display: ;
+    display: none; /* Inicialmente, o container do quebra-cabeça completo está oculto */
   }  

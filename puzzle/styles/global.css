@@ -1,14 +1,14 @@
 /* Define a fonte e a alinhamento do texto para o corpo do documento */
 body {
-    font-family: ;
-    text-align: ;
+    font-family: 'Arial', sans-serif; /* Fonte Arial ou uma fonte genérica sans-serif caso não seja possível carregar Arial */
+    text-align: center; /* Centralizar o texto horizontalmente dentro do corpo do documento */
   }
   
   /* Container principal */
   .container {
-    display: ;
-    flex-direction: ;
-    align-items: ;
-    justify-content:;
-    height: ;
+    display: flex; /* Layout flexível para o container */
+    flex-direction: column; /* Direção dos elementos filhos como uma coluna */
+    align-items: center; /* Centraliza os elementos filhos horizontalmente */
+    justify-content: center; /* Centraliza os elementos filhos verticalmente */
+    height: 100vh; /* Define a altura do container como 100% da altura da viewport */
   }

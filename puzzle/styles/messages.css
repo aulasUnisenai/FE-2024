@@ -1,32 +1,32 @@
 /* Estiliza a mensagem de conclusão do quebra-cabeça */
 .completed-message {
-    font-size: ;
-    font-weight: ;
-    color: ;
-    margin-bottom: ;
+    font-size: 24px; /* Define o tamanho da fonte como 24px */
+    font-weight: bold; /* Define a espessura da fonte como negrito */
+    color: #4285f4; /* Define a cor do texto como azul */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
   }
   
   /* Estiliza as estatísticas do quebra-cabeça */
   .stats {
-    font-size: ;
-    margin-bottom: ;
+    font-size: 16px; /* Define o tamanho da fonte como 16px */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10px */
   }
   
   /* Estiliza o ícone de troféu */
   .trophy-icon {
-    color: ;
-    margin-bottom: ;
+    color: #ffc107; /* Define a cor do ícone como amarelo */
+    margin-bottom: 20px; /* Adiciona uma margem inferior de 20px */
   }
   
   /* Estiliza o ícone de reiniciar */
   .restart-icon {
-    color: ;
-    cursor: ;
-    margin-top: ;
-    transition: ;
+    color: #4285f4; /* Define a cor do ícone como azul */
+    cursor: pointer; /* Altera o cursor para indicar que o ícone é clicável */
+    margin-top: 10px; /* Adiciona uma margem superior de 10px */
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave na mudança de cor */
   }
   
   /* Estiliza o hover do ícone de reiniciar */
   .restart-icon:hover {
-    color: ;
+    color: #34a853; /* Muda a cor do ícone para verde ao passar o mouse sobre ele */
   }  

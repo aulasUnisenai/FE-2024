@@ -1,0 +1,40 @@
+/* Estilo para o corpo da página */
+body {
+    height: ;
+    margin: ;
+    display: ;
+    justify-content: ;
+    align-items: ;
+  }
+  
+  /* Estilo para o contêiner */
+  .container {
+    display: ;
+    justify-content: ;
+    align-items: ;
+    max-width: ;
+    padding: ;
+    box-sizing: ;
+  }
+  
+  /* Estilo para o gráfico */
+  .chart {
+    background-color: ; 
+    width: ; 
+    max-width: ; 
+    padding: ; 
+    box-sizing: ;
+  }
+  
+  /* Estilos responsivos */
+  @media (min-width: 768px) {
+    .container {
+      width: ; 
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      width: ;
+    }
+  }  

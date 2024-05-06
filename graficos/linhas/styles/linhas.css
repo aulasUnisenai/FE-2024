@@ -1,0 +1,22 @@
+/* Estilo para o corpo da página */
+body {
+    display:;
+    justify-content: ;
+    align-items: ;
+    height: ;
+    margin: ;
+  }
+  
+  /* Estilo para o contêiner do gráfico */
+  .chart-container {
+    max-width: ;
+    width: ;
+  }
+  
+  /* Regra de mídia para telas menores */
+  @media screen and (max-width: 600px) {
+    .chart-container {
+      width: ;
+      margin: ;
+    }
+  }

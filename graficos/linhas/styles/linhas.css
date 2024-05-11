@@ -1,22 +1,22 @@
 /* Estilo para o corpo da página */
 body {
-    display:;
-    justify-content: ;
-    align-items: ;
-    height: ;
-    margin: ;
+    display: flex; /* Container flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    height: 100vh; /* Altura do corpo como 100% da altura da viewport */
+    margin: 0; /* Remove as margens padrão do corpo */
   }
   
   /* Estilo para o contêiner do gráfico */
   .chart-container {
-    max-width: ;
-    width: ;
+    max-width: 90%; /* Tamanho máximo do contêiner do gráfico */
+    width: 600px; /* Largura inicial do contêiner do gráfico */
   }
   
   /* Regra de mídia para telas menores */
   @media screen and (max-width: 600px) {
     .chart-container {
-      width: ;
-      margin: ;
+      width: 90%; /* Reduz a largura do contêiner para 90% da largura da tela */
+      margin: 20px auto; /* Centraliza o contêiner horizontalmente e adiciona margem superior e inferior */
     }
   }

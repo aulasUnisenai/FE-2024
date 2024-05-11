@@ -1,40 +1,40 @@
 /* Estilo para o corpo da página */
 body {
-    height: ;
-    margin: ;
-    display: ;
-    justify-content: ;
-    align-items: ;
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    margin: 0; /* Remove as margens padrão do corpo */
+    display: flex; /* Torna o corpo um container flexível */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
   }
   
   /* Estilo para o contêiner */
   .container {
-    display: ;
-    justify-content: ;
-    align-items: ;
-    max-width: ;
-    padding: ;
-    box-sizing: ;
+    display: flex; /* Torna o contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente o contêiner */
+    align-items: center; /* Centraliza verticalmente o contêiner */
+    max-width: 90%; /* Define uma largura máxima para o contêiner */
+    padding: 20px; /* Adiciona um preenchimento interno ao contêiner */
+    box-sizing: border-box; /* Garante que o preenchimento não aumente a largura total */
   }
   
   /* Estilo para o gráfico */
   .chart {
-    background-color: ; 
-    width: ; 
-    max-width: ; 
-    padding: ; 
-    box-sizing: ;
+    background-color: #f1f1f1; /* Define a cor de fundo do gráfico */
+    width: 100%; /* O gráfico ocupará toda a largura disponível */
+    max-width: 100%; /* Define uma largura máxima para o gráfico */
+    padding: 20px; /* Adiciona um preenchimento interno ao gráfico */
+    box-sizing: border-box; /* Garante que o preenchimento não aumente a largura total */
   }
   
   /* Estilos responsivos */
   @media (min-width: 768px) {
     .container {
-      width: ; 
+      width: 700px; /* Largura fixa para telas maiores */
     }
   }
   
   @media (min-width: 992px) {
     .container {
-      width: ;
+      width: 900px; /* Largura fixa para telas ainda maiores */
     }
   }  

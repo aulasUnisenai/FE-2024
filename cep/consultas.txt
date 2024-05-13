@@ -1,0 +1,5 @@
+// consultar por cep
+https://viacep.com.br/ws/${cep}/json/
+
+// consultar por localização
+https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude};

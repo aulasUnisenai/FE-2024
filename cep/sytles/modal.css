@@ -1,0 +1,48 @@
+#modal {
+  display: ;
+  position: ;
+  inset: ;
+  background-color: ;
+  z-index: ;
+}
+
+.modal-content {
+  background-color: ;
+  padding: ;
+  border-radius: ;
+  width: ;
+  max-height: ;
+  overflow-y: ;
+  position: ;
+  top: ;
+  left: ;
+  transform: ;
+  box-shadow: ;
+}
+
+#fechar-modal {
+  color: ;
+  position: ;
+  top: ;
+  right: ;
+  font-size: ;
+  font-weight: ;
+  cursor: ;
+}
+
+#fechar-modal:hover,
+#fechar-modal:focus {
+  color: ;
+}
+
+@media (max-width: 48em) {
+  .modal-content {
+    width: ;
+  }
+
+  #fechar-modal {
+    top: ;
+    right: ;
+    font-size: ;
+  }
+}

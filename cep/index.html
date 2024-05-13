@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CEP</title>
+  <link rel="stylesheet" href="sytles\main.css">
+  <!--Biblioteca Anime.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+  <section id="minha-secao">
+    <div id="wrap-cta" class="ativo">
+      <button id="cta">Vamos começar!</button>
+    </div>
+    <!--Scalable Vector Graphics-->
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <!--Coordenadas dos vértices do polígono (x,y)-->
+      <polygon class="polymorph" points="100,100 0,100 0,0 100,0"></polygon>
+    </svg>
+    <div class="container">
+      <div id="conteudo">
+        <h1>Digite o seu CEP, por favor:</h1>
+        <form id="formulario-cep">
+          <!--Máscara de entrada-->
+          <input type="text" id="cep-input" placeholder="Ex: 12345-678" pattern="[0-9]{5}-[0-9]{3}" maxlength="9">
+          <button type="submit" id="consultar">Consultar</button>
+          <button type="button" id="geolocalizacao">Geolocalização</button>
+        </form>
+        <button id="fechar">Ok, até mais!</button>
+      </div>
+    </div>
+  </section>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="fechar-modal">&times;</span>
+      <div id="resultado-modal"></div>
+    </div>
+  </div>
+  <script type="module" src="scripts\init.js"></script>
+</body>
+</html>

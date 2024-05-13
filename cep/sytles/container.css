@@ -1,0 +1,48 @@
+.container {
+  position: ;
+  text-align: ;
+  height: ;
+  display: ;
+  flex-direction: ;
+  justify-content: ;
+}
+
+#conteudo {
+  opacity: ;
+  color: ;
+  transition: ;
+}
+
+#fechar {
+  display: ;
+  margin-top: ;
+  padding: ;
+  text-transform: ;
+  font-size: ;
+  color: ;
+  background: ;
+  border: ;
+  border-radius: ;
+  cursor: ;
+  outline:;
+  transition: ;
+}
+
+#fechar:hover {
+  background: );
+}
+
+#conteudo.ativo {
+  opacity: ;
+}
+
+@media screen and (max-width: 48em) {
+  .container {
+    padding: ; 
+  }
+
+  #fechar {
+    margin-top: ; 
+    font-size: ;
+  }
+}

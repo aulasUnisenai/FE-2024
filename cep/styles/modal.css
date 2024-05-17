@@ -4,20 +4,22 @@
   inset: ;
   background-color: ;
   z-index: ;
+  white-space: ;
 }
 
 .modal-content {
   background-color: ;
   padding: ;
   border-radius: ;
-  width: ;
+  max-width: ;
   max-height: ;
-  overflow-y: ;
   position: ;
   top: ;
   left: ;
   transform: ;
   box-shadow: ;
+  white-space: ;
+  font-size: ;
 }
 
 #fechar-modal {

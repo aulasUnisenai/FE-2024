@@ -1,50 +1,50 @@
 #modal {
-  display: ;
-  position: ;
-  inset: ;
-  background-color: ;
-  z-index: ;
-  white-space: ;
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  white-space: nowrap; /* Evita quebras de linha */
 }
 
 .modal-content {
-  background-color: ;
-  padding: ;
-  border-radius: ;
-  max-width: ;
-  max-height: ;
-  position: ;
-  top: ;
-  left: ;
-  transform: ;
-  box-shadow: ;
-  white-space: ;
-  font-size: ;
+  background-color: #fefefe;
+  padding: 2rem; /* Aumento do preenchimento */
+  border-radius: 1rem;
+  max-width: 40em; /* Removido width fixo */
+  max-height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  white-space: pre-line;
+  font-size: 1rem; /* Redução do tamanho da fonte */
 }
 
 #fechar-modal {
-  color: ;
-  position: ;
-  top: ;
-  right: ;
-  font-size: ;
-  font-weight: ;
-  cursor: ;
+  color: #aaa;
+  position: absolute;
+  top: 1.5rem; /* Aumento da margem superior */
+  right: 1.5rem; /* Aumento da margem direita */
+  font-size: 1.25rem; /* Redução do tamanho da fonte */
+  font-weight: bold;
+  cursor: pointer;
 }
 
 #fechar-modal:hover,
 #fechar-modal:focus {
-  color: ;
+  color: #000;
 }
 
 @media (max-width: 48em) {
   .modal-content {
-    width: ;
+    max-width: 90%; /* Ajuste para largura máxima em telas menores */
   }
 
   #fechar-modal {
-    top: ;
-    right: ;
-    font-size: ;
+    top: 1rem; /* Aumento da margem superior */
+    right: 1rem; /* Aumento da margem direita */
+    font-size: 1rem; /* Redução do tamanho da fonte */
   }
 }

@@ -1,48 +1,48 @@
 .container {
-  position: ;
-  text-align: ;
-  height: ;
-  display: ;
-  flex-direction: ;
-  justify-content: ;
+  position: relative;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #conteudo {
-  opacity: ;
-  color: ;
-  transition: ;
+  opacity: 0;
+  color: var(--primaria);
+  transition: opacity 0.6s 0.2s;
 }
 
 #fechar {
-  display: ;
-  margin-top: ;
-  padding: ;
-  text-transform: ;
-  font-size: ;
-  color: ;
-  background: ;
-  border: ;
-  border-radius: ;
-  cursor: ;
-  outline:;
-  transition: ;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: var(--primaria);
+  background: transparent;
+  border: 0.1rem solid;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.4s;
 }
 
 #fechar:hover {
-  background: );
+  background: rgba(48, 46, 47, 0.3);
 }
 
 #conteudo.ativo {
-  opacity: ;
+  opacity: 1;
 }
 
 @media screen and (max-width: 48em) {
   .container {
-    padding: ; 
+    padding: 0 1em; /* Adaptação para telas menores */
   }
 
   #fechar {
-    margin-top: ; 
-    font-size: ;
+    margin-top: 1em; /* Reduzindo a margem superior em telas menores */
+    font-size: 0.8em; /* Ajustando o tamanho da fonte para telas menores */
   }
 }

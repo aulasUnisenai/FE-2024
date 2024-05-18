@@ -1,24 +1,24 @@
 form {
-  margin-top: ; /* Equivalente a 20px */
+  margin-top: 1.25rem; /* Equivalente a 20px */
 }
 
 #cep-input {
-  padding: ; /* Equivalente a 8px */
-  border: ; /* Equivalente a 1px */
-  border-radius: ; /* Equivalente a 4px */
-  margin-right: ; /* Equivalente a 10px */
+  padding: 0.5rem; /* Equivalente a 8px */
+  border: 0.1rem solid #ccc; /* Equivalente a 1px */
+  border-radius: 0.25rem; /* Equivalente a 4px */
+  margin-right: 0.625rem; /* Equivalente a 10px */
 }
 
 button {
-  padding: ; /* Equivalente a 8px 16px */
-  background-color: ;
-  color: ;
-  border: ;
-  border-radius: ; /* Equivalente a 4px */
-  cursor: ;
-  outline: ;
+  padding: 0.5rem 1rem; /* Equivalente a 8px 16px */
+  background-color: var(--primaria);
+  color: var(--secundaria);
+  border: none;
+  border-radius: 0.25rem; /* Equivalente a 4px */
+  cursor: pointer;
+  outline: none;
 }
 
 button:hover {
-  background-color: ;
+  background-color: #0a1dc9;
 }

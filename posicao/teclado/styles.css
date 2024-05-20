@@ -1,0 +1,31 @@
+body {
+    display: ;
+    justify-content: ;
+    align-items: ;
+    height: ;
+    margin: ;
+    flex-direction: ;
+    background-color: ;
+}
+
+#container {
+    position: ;
+    width: ;
+    height: ;
+    border: ;
+    border-radius: ;
+    background-color: ;
+    box-shadow: ;
+    box-sizing: ; 
+    overflow: ; 
+}
+
+#circulo {
+    position: ;
+    width: ;
+    height: ;
+    background-color: ;
+    border-radius: ; 
+    transition: ;
+    box-sizing: ; 
+}

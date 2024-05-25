@@ -1,55 +1,55 @@
 body {
-    display: ;
-    justify-content: ;
-    align-items: ;
-    height: ;
-    margin: ;
-    flex-direction: ;
-    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #f0f0f0;
 }
 
 #container {
-    position: ;
-    width: ;
-    height: ;
-    border: ;
-    border-radius: ;
-    background-color: ;
-    box-shadow: ;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #quadrado {
-    position: ;
-    width: ;
-    height: ;
-    background-color: ;
-    border-radius: ;
-    transition: ;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: top 0.1s ease, left 0.1s ease;
 }
 
 #controles {
-    margin-top: ;
-    display: ;
-    gap: ;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 button {
-    padding: ;
-    font-size: ;
-    font-weight: ;
-    cursor: ;
-    border: ;
-    border-radius: ;
-    background-color: ;
-    color: ;
-    box-shadow: ;
-    transition: ;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-    background-color: 
+    background-color: #0056b3;
 }
 
 button:active {
-    transform: ;
+    transform: scale(0.95);
 }

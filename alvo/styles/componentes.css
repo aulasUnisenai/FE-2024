@@ -1,0 +1,70 @@
+/* componentes.css */
+.opcoes input[type="number"] {
+    margin-right: ;
+    padding: ;
+    border: ;
+    border-radius: ;
+    font-size: ;
+    color: ;
+    background-color: ;
+}
+
+.opcoes input[type="number"]::placeholder {
+    color: ;
+}
+
+.opcoes button {
+    padding: ;
+    border: ;
+    background-color: ;
+    color: ;
+    cursor:;
+    border-radius: ;
+    transition: ;
+}
+
+.opcoes button:hover {
+    background-color: ;
+    transform: ;
+}
+
+#containerJogo {
+    margin-bottom: ;
+    position: ;
+    width: ;
+    max-width: ;
+    height: ;
+    border: ;
+    border-radius: ;
+    background:;
+    box-shadow: ;
+    overflow: ;
+    margin: ;
+}
+
+.alvo {
+    width: ;
+    height: ;
+    background-color: ;
+    position: ;
+    cursor: ;
+    border-radius: ;
+    transition: ;
+    box-shadow: ;
+    overflow: ;
+}
+
+.alvo::before {
+    content: ;
+    position: ;
+    width: ;
+    height: ;
+    background: ;
+    mix-blend-mode: ;
+    border-radius: ;
+}
+
+.alvo:hover {
+    background-color: ;
+    transform: ;
+}

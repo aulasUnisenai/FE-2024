@@ -1,0 +1,17 @@
+/* layout.css */
+.topo {
+    display: ;
+    justify-content: ;
+    align-items: ;
+    margin-bottom: ;
+}
+
+.opcoes, .informacoes {
+    display: ;
+    align-items: ;
+}
+
+.opcoes label, .informacoes div {
+    margin-right: ;
+    color: ;
+}

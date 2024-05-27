@@ -1,0 +1,18 @@
+/* base.css */
+body {
+    margin: ;
+    font-family: ;
+    background: ;
+    background-size: ;
+    animation:;
+    padding: ;
+    box-sizing: ;
+    color: ;
+    text-shadow: ;
+}
+
+@keyframes gradientAnimation {
+    0% {  }
+    50% { }
+    100% {  }
+}

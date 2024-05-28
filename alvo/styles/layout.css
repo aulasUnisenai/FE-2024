@@ -1,17 +1,17 @@
 /* layout.css */
 .topo {
-    display: ;
-    justify-content: ;
-    align-items: ;
-    margin-bottom: ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .opcoes, .informacoes {
-    display: ;
-    align-items: ;
+    display: flex;
+    align-items: center;
 }
 
 .opcoes label, .informacoes div {
-    margin-right: ;
-    color: ;
+    margin-right: 10px;
+    color: #fff;
 }

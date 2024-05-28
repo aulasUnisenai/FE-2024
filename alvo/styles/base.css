@@ -1,18 +1,18 @@
 /* base.css */
 body {
-    margin: ;
-    font-family: ;
-    background: ;
-    background-size: ;
-    animation:;
-    padding: ;
-    box-sizing: ;
-    color: ;
-    text-shadow: ;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(135deg, #4b006e, #212800);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
 }
 
 @keyframes gradientAnimation {
-    0% {  }
-    50% { }
-    100% {  }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
